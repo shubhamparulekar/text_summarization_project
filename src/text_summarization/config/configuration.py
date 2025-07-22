@@ -1,6 +1,7 @@
 from text_summarization.constants import *
 from text_summarization.utils.common import read_yaml, create_directories, get_size
-from text_summarization.entity import (DataIngestionConfig)
+from text_summarization.entity import (DataIngestionConfig, 
+                                       DataValidationConfig)
 
 class ConfigurationManager:
     def __init__(
@@ -13,17 +14,26 @@ class ConfigurationManager:
 
         create_directories([self.config.artifacts_root], verbose=True)
 
-    def get_data_ingestion_config(self) -> DataIngestionConfig:
+    def get_data_ingestion_config(self):
         config = self.config.data_ingestion
-
         create_directories([config.root_dir], verbose=True)
-
         data_ingestion_config = DataIngestionConfig(
             root_dir=config.root_dir,
             source_URL=config.source_URL,
             local_data_file=config.local_data_file,
             unzip_dir=config.unzip_dir 
         )
-
         return data_ingestion_config
 
+    def get_data_validation_config(self) -> DataValidationConfig:
+        config = self.config.data_validation
+
+        create_directories([config.root_dir], verbose=True)
+
+        data_validation_config = DataValidationConfig(
+            root_dir=config.root_dir,
+            status_file=config.status_file,
+            all_required_files=config.all_required_files
+        )
+
+        return data_validation_config
