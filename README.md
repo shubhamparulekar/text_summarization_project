@@ -134,10 +134,7 @@ Sample Output
 ---
 
 ## Project Interface:
-
-
-![alt text](<img width="1034" height="826" alt="Screenshot from 2025-08-10 16-26-30" src="https://github.com/user-attachments/assets/5b77ce50-b063-4935-bca4-b2f792657d7b" />
-)
+<img width="1034" height="826" alt="Screenshot from 2025-08-10 16-26-30" src="https://github.com/user-attachments/assets/3034766e-65f5-493a-a3ab-99cce3f6b8bc" />
 
 
 
@@ -164,5 +161,6 @@ Contributions are welcome! Please:
 
 * Built with inspiration from various summarization frameworks
 * Thanks to the open-source community for providing models and utilities
+
 
 
