@@ -133,12 +133,11 @@ Sample Output
 
 ---
 
-## Screenshot Placeholder
-
-Project Interface:
+## Project Interface:
 
 
-![alt text](<Screenshot from 2025-08-10 16-26-30.png>)
+![alt text](<img width="1034" height="826" alt="Screenshot from 2025-08-10 16-26-30" src="https://github.com/user-attachments/assets/5b77ce50-b063-4935-bca4-b2f792657d7b" />
+)
 
 
 
@@ -165,4 +164,5 @@ Contributions are welcome! Please:
 
 * Built with inspiration from various summarization frameworks
 * Thanks to the open-source community for providing models and utilities
+
 
